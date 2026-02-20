@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hakkımızda | Adıgüzel Catering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13", // Vibrant Orange
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#000000", // Deep Black
+                        "card-dark": "#111111", // Dark charcoal for cards
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(236, 91, 19, 0.05);
+        }
+        .section-divider {
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300">
+<!-- Top Navigation -->
+<header class="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/10 bg-black/95">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tight uppercase">Adıgüzel <span class="text-primary">Catering</span></h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Ana Sayfa</a>
+<a class="text-primary text-sm font-semibold" href="#">Kurumsal</a>
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Hizmetlerimiz</a>
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">Menüler</a>
+<a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="#">İletişim</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                Teklif Al
+            </button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center parallax-bg brightness-50" data-alt="Professional commercial kitchen with high-end steel appliances" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXQj0ifLuIwdsmT2CfSBa_KPM51OhvJj2XzNKQDxnM-QUh81IZKMx7K02mo1S7LFRai2rhtehwGe4txY_B7H28kNVIbFoHsoEPIGimQLSuHrGUeq41Zs-CUt11StZVEHD7T7WK8Wiy-vPtzu4CByMtaG50PY2C_a7TklAEA867Qhv1ccuev4qaQ2WK8iOIdjChSxdrIQU8EOIvq7-jX615QOIkZ77oap9nrmAGZ_ZvZjaEOQdjmZYYDP2WfEdJuO3rOIXZxuM7gb4')">
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 block">Geleceğin Lezzet Mirası</span>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight mb-6">
+                Köklerimizden Gelen <br/><span class="text-primary italic">Endüstriyel Güç</span>
+</h1>
+<p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                Adıgüzel Catering olarak, 25 yılı aşkın tecrübemizle profesyonel mutfak disiplinini kurumsal vizyonumuzla birleştiriyoruz.
+            </p>
+<div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+<a class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all" href="#history">Hikayemizi Keşfedin</a>
+<a class="px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/10 transition-all backdrop-blur-sm" href="#vision">Vizyonumuz</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
+<span class="material-symbols-outlined text-4xl">expand_more</span>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 border-y border-white/5 bg-black">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center group">
+<div class="text-primary text-4xl md:text-5xl font-black mb-2 group-hover:scale-110 transition-transform">25+</div>
+<div class="text-white/60 text-sm uppercase tracking-widest font-bold">Yıllık Tecrübe</div>
+</div>
+<div class="text-center group">
+<div class="text-primary text-4xl md:text-5xl font-black mb-2 group-hover:scale-110 transition-transform">10k+</div>
+<div class="text-white/60 text-sm uppercase tracking-widest font-bold">Günlük Kapasite</div>
+</div>
+<div class="text-center group">
+<div class="text-primary text-4xl md:text-5xl font-black mb-2 group-hover:scale-110 transition-transform">150+</div>
+<div class="text-white/60 text-sm uppercase tracking-widest font-bold">Uzman Personel</div>
+</div>
+<div class="text-center group">
+<div class="text-primary text-4xl md:text-5xl font-black mb-2 group-hover:scale-110 transition-transform">500+</div>
+<div class="text-white/60 text-sm uppercase tracking-widest font-bold">Kurumsal Referans</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company History (Timeline) -->
+<section class="py-24 relative overflow-hidden bg-black" id="history">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center">
+<h2 class="text-white text-3xl md:text-4xl font-bold mb-4">Kurumsal Yolculuğumuz</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-white/10 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Event 1 -->
+<div class="flex flex-col md:flex-row items-center gap-8 relative">
+<div class="md:w-1/2 text-right hidden md:block">
+<h3 class="text-primary text-2xl font-bold mb-2">1998</h3>
+<p class="text-gray-400">Küçük bir aile işletmesi olarak yerel mutfakta ilk temeller atıldı.</p>
+</div>
+<div class="z-10 size-12 rounded-full bg-primary border-4 border-background-dark flex items-center justify-center text-white font-bold">1</div>
+<div class="md:w-1/2">
+<div class="glass-card p-8 rounded-xl">
+<h3 class="text-white text-xl font-bold mb-3 md:hidden">1998 - Kuruluş</h3>
+<p class="text-gray-300">"Lezzet ve Güven" ilkesiyle çıktığımız bu yolda, ilk büyük kurumsal sözleşmemizi imzaladık.</p>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 relative">
+<div class="md:w-1/2 text-left hidden md:block">
+<h3 class="text-primary text-2xl font-bold mb-2">2005</h3>
+<p class="text-gray-400">Endüstriyel mutfak kapasitemizi %300 artırarak yeni tesisimize geçtik.</p>
+</div>
+<div class="z-10 size-12 rounded-full bg-primary border-4 border-background-dark flex items-center justify-center text-white font-bold">2</div>
+<div class="md:w-1/2">
+<div class="glass-card p-8 rounded-xl">
+<h3 class="text-white text-xl font-bold mb-3 md:hidden">2005 - Büyüme</h3>
+<p class="text-gray-300">Teknoloji odaklı pişirme tekniklerini bünyemize katarak operasyonel mükemmelliği hedefledik.</p>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex flex-col md:flex-row items-center gap-8 relative">
+<div class="md:w-1/2 text-right hidden md:block">
+<h3 class="text-primary text-2xl font-bold mb-2">2015</h3>
+<p class="text-gray-400">ISO 22000 ve HACCP standartlarını tüm süreçlerimize entegre ettik.</p>
+</div>
+<div class="z-10 size-12 rounded-full bg-primary border-4 border-background-dark flex items-center justify-center text-white font-bold">3</div>
+<div class="md:w-1/2">
+<div class="glass-card p-8 rounded-xl">
+<h3 class="text-white text-xl font-bold mb-3 md:hidden">2015 - Sertifikasyon</h3>
+<p class="text-gray-300">Gıda güvenliği ve hijyende uluslararası standartların üzerine çıkarak sektörde öncü konuma geldik.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Parallax Image Divider -->
+<div class="h-[400px] parallax-bg relative flex items-center justify-center" data-alt="Gourmet plated food assembly in a high-end restaurant kitchen" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTf3q20PULiIo841Dny5bH74oprlugnaDrkg-cEAoK568UiAyv2GHgw-uaRqfPen-WxWzLXEoOnnBeoaDZzOL4Vb4-6rk0S-vDJpjwMeAPSqmQC_2XaYWgq-pQjbjzfWDJFPrh6Rd5s0WrypHceabvcvhpZFg9tc5GfAzUAEANC-5mSse39nPUls5i_pQMvtSC4Pg_9898J3UDIYObB7qN_4zyZN5DbWSk2OoUsLPBPEqCgo_wOkT4mJcEMmQCXQtT3OSb8T0rPko')">
+<div class="text-center text-white px-4">
+<h2 class="text-4xl md:text-5xl font-black italic">"Detaylardaki Mükemmellik, Sofradaki Sanat"</h2>
+</div>
+</div>
+<!-- Mission & Vision -->
+<section class="py-24 bg-black" id="vision">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12">
+<div class="glass-card p-12 rounded-2xl border-t-4 border-primary group hover:bg-white/5 transition-all">
+<div class="mb-6 inline-flex items-center justify-center size-16 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">visibility</span>
+</div>
+<h3 class="text-white text-3xl font-bold mb-6">Vizyonumuz</h3>
+<p class="text-gray-300 leading-relaxed text-lg">
+                        Catering sektöründe teknolojiyi ve geleneksel lezzeti harmanlayan, sürdürülebilir gıda politikalarıyla global standartlarda Türkiye'nin en güvenilir çözüm ortağı olmak. Her öğünde sadece yemek değil, bir yaşam kalitesi sunmayı hedefliyoruz.
+                    </p>
+</div>
+<div class="glass-card p-12 rounded-2xl border-t-4 border-primary group hover:bg-white/5 transition-all">
+<div class="mb-6 inline-flex items-center justify-center size-16 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">rocket_launch</span>
+</div>
+<h3 class="text-white text-3xl font-bold mb-6">Misyonumuz</h3>
+<p class="text-gray-300 leading-relaxed text-lg">
+                        Müşterilerimize yüksek hijyen standartlarında, besleyici ve lezzetli yemekler sunarak iş verimliliklerini artırmak. Çalışan sağlığını ve gıda güvenliğini odağımızda tutarak, etik değerlerden ödün vermeden büyümemizi sürdürmek.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Team -->
+<section class="bg-background-light dark:bg-slate-900 py-24 transition-colors">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Lezzet Mimarları</span>
+<h2 class="text-slate-900 dark:text-white text-4xl font-black mt-2">Profesyonel Ekibimiz</h2>
+<p class="mt-4 text-slate-500 dark:text-gray-400 max-w-2xl mx-auto">Mutfak disiplini ve kurumsal yönetimin en iyilerini bir araya getiren kadromuzla tanışın.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Executive Chef in professional uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxEpM4nM3C4hB0lVKpnNpH8Bf4VGaOePFXjwqWiCPf7PiKD_TAdGmg7Yzaudn91Ys9vGsOrOGTLiOy6nVtVCSC9XP7319SO6yM9Fo27dQRAirUDDFbmurCuBWujZSGJj-JatelAkq3dh15SaWCgoEVSFNIUebNcR-6J_b16UWJIJhQ0Mi4hXHGQk3efZy3j-wbsj-T9LlobyhQvtUIfmY3wfUUc3FMrjTIexMXDoVnbcneiUqEfJz-WbRaZ6Eh3uzrXqKcl3BObpM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<div class="flex gap-3 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">group</span>
+</div>
+</div>
+</div>
+<h4 class="text-slate-900 dark:text-white text-xl font-bold">Chef Mehmet Adıgüzel</h4>
+<p class="text-primary font-medium text-sm">Kurucu &amp; Baş Aşçı</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional female kitchen manager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXN_o2rqc1Bb1Og9GVpSnuUGNSJPxzSHD7xWgf9hZx3q1WMvW2blkQi5Ei7dEdOiU2M-0-Tl3dZrIGzk1_JVD8JU0dVWCxlzV_Vxy-0SAX2lyY7XBgVnsXflWBpF_m02Ddm9pXSiYn8c3IpNtepzNp2cvPWXD0Etwr9XpPJ4A1y9OfmUJMdZYN7y1zC7Z4spctiEyudP893OuNy2jlwjgdlDHR8CmkymnkG5OQNM93fAZldZTCAllmPxBNdC0PF3cGdxWjmsmHTfo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<div class="flex gap-3 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">mail</span>
+</div>
+</div>
+</div>
+<h4 class="text-slate-900 dark:text-white text-xl font-bold">Ayşe Yılmaz</h4>
+<p class="text-primary font-medium text-sm">Operasyon Müdürü</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Male chef in white uniform working" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1RSFj2efTqyfMt0oLRmnsEp4uHZpTs9BDumzVilWziQXrwIKM7tLj0nOLvTstCS4P5nqm0jTDi8fSw9lf9JHQpCHjQg2LyXgAitO4wAS7rRbKsETthV07qPlCYg6xUzjeBVe2RrBHrMY3j7zkK16BqYkf6jhXI_Y-rxIAagaSUBHI9Lkxj7myNIZtRLwM77I8k-O6MMyRMFJAd1Yp2tSSY879QRdeeJuIP3fBfExlcV6NQ307hEGRU7Eoaozcj0W9OLQzWrajtQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<div class="flex gap-3 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">star</span>
+</div>
+</div>
+</div>
+<h4 class="text-slate-900 dark:text-white text-xl font-bold">Chef Caner Demir</h4>
+<p class="text-primary font-medium text-sm">Menü Tasarım Direktörü</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-4 aspect-[3/4]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Female food quality control specialist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBaJz1R_SKKMRWJMtxGDJ3mR_CESkivqjIyqGH415PI1Z7Mx-Dfd9Gmo0KPxvAiMEYPsk1uHHT3ohqRFA_1RYE54BGYtAsT1yfkKm416GrK8nCwoxqjGcWF8ngrMIecDfWOdnAaaeD8xEQshbAjObkz4bJyxEzpiC9b4FSyAEVCyL9sDzwJlhzLJRlMYOmn7YUV-d69ec6OLSUIqtmKUEbR6QjVfjSLxEIw6vr9Y0nzPQjOwxEP_-LRBzy93rRBlIT6ogr2CmYoNw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<div class="flex gap-3 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">verified</span>
+</div>
+</div>
+</div>
+<h4 class="text-slate-900 dark:text-white text-xl font-bold">Elif Aksoy</h4>
+<p class="text-primary font-medium text-sm">Gıda Mühendisi &amp; Kalite Kontrol</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary py-20">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<h2 class="text-white text-4xl md:text-5xl font-black mb-8 leading-tight">Kurumsal Gücümüzle Şirketinize <br/>Değer Katmaya Hazırız</h2>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-background-dark text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-900 transition-all flex items-center gap-2">
+                    Hemen Teklif Alın <span class="material-symbols-outlined">trending_flat</span>
+</button>
+<button class="bg-white/20 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/30 transition-all backdrop-blur-sm">
+                    Kataloğumuzu İndirin
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-20 border-t border-white/5 bg-black">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-tight uppercase">Adıgüzel <span class="text-primary">Catering</span></h2>
+</div>
+<p class="text-gray-400 max-w-sm mb-6 leading-relaxed">
+                        Endüstriyel mutfak standartlarında, modern ve hijyenik koşullarda catering hizmetleri sunuyoruz. Sağlığınız ve mutluluğunuz bizim önceliğimizdir.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Hızlı Menü</h4>
+<ul class="space-y-4 text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Ana Sayfa</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hizmetlerimiz</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hakkımızda</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">İletişim</h4>
+<ul class="space-y-4 text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Adıgüzel Plaza, No:12 <br/>Levent, İstanbul</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>+90 (212) 555 00 00</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span>info@adiguzelcatering.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+<p>© 2024 Adıgüzel Catering. Tüm Hakları Saklıdır.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Gizlilik Politikası</a>
+<a class="hover:text-white transition-colors" href="#">Kullanım Koşulları</a>
+<a class="hover:text-white transition-colors" href="#">KVKK</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
