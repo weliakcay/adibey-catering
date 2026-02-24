@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Blog | Adıbey Catering</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.fav.jpg" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0a0c10",
+                        "navy-muted": "#161b22",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #0a0c10;
+            color: white;
+        }
+
+        .glass-nav {
+            background: rgba(10, 12, 16, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(236, 91, 19, 0.2);
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 20px rgba(236, 91, 19, 0.15);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(236, 91, 19, 0.1);
+        }
+    </style>
+</head>
+
+<body class="dark">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Adıbey Catering Logo" class="h-40 w-auto object-contain" />
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Ana Sayfa</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="hakkimizda.html">Hakkımızda</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="menuler.html">Menüler</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="referanslar.html">Referanslar</a>
+                <a class="text-sm font-semibold text-primary transition-colors" href="blog.html">Blog</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="teklif-al.html"
+                    class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all gold-glow flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-sm"></i> Sizi Arayalım
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-40 pb-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-primary font-bold uppercase tracking-widest text-sm">Catering Dünyasından</span>
+            <h1 class="text-white text-5xl md:text-6xl font-black mt-3 mb-6">Blog & İpuçları</h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">Catering sektörünün incelikleri, menü trendleri ve organizasyon
+                ipuçlarını keşfedin.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="pb-24 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Blog 1 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-1.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                        alt="Kurumsal yemek organizasyonu" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Kurumsal</span>
+                        <span class="text-xs text-slate-500">15 Ocak 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-1.html" class="hover:text-primary transition-colors">Kurumsal Öğle Yemeklerinde Başarının Sırrı: Verimlilik ve Lezzet Dengesi</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Çalışan memnuniyetini artıran, üretkenliği yükselten kurumsal yemek organizasyonlarında dikkat edilmesi gereken en önemli 7 nokta.</p>
+                    <a href="blog-1.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 2 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-2.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80"
+                        alt="Düğün yemeği sunumu" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Düğün</span>
+                        <span class="text-xs text-slate-500">28 Ocak 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-2.html" class="hover:text-primary transition-colors">Düğün Menüsü Seçerken Yapılan 5 Büyük Hata ve Çözümleri</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Hayatınızın en özel gününde misafirlerinizi etkileyecek mükemmel düğün menüsünü oluştururken kaçınmanız gereken yaygın hatalar.</p>
+                    <a href="blog-2.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 3 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-3.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                        alt="Türk mutfağı zenginlikleri" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Menü</span>
+                        <span class="text-xs text-slate-500">5 Şubat 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-3.html" class="hover:text-primary transition-colors">2025'in Öne Çıkan Catering Menü Trendleri</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Bu yıl organizasyonlarda en çok tercih edilen menü konseptleri: farm-to-table, vejetaryen seçenekler ve yerel lezzetlerin yükselişi.</p>
+                    <a href="blog-3.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 4 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-4.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80"
+                        alt="Kahvaltı tabağı sunumu" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Kahvaltı</span>
+                        <span class="text-xs text-slate-500">12 Şubat 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-4.html" class="hover:text-primary transition-colors">Kurumsal Kahvaltı Organizasyonunda Türk Kahvaltısının Gücü</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">İş toplantılarını ve sabah etkinliklerini zenginleştiren Türk kahvaltısı geleneğini kurumsal ortama taşımanın püf noktaları.</p>
+                    <a href="blog-4.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 5 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-5.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1530062845289-9109b2c9c868?w=800&q=80"
+                        alt="Kokteyl partisi yiyecekleri" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Kokteyl</span>
+                        <span class="text-xs text-slate-500">20 Şubat 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-5.html" class="hover:text-primary transition-colors">Kokteyl Partinizi Unutulmaz Kılacak Canapé ve Finger Food Seçimleri</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Ayaküstü ikramların sanatı: Misafirlerinizi şaşırtacak mini lezzetler, sunum teknikleri ve porsiyon hesaplama rehberi.</p>
+                    <a href="blog-5.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 6 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-6.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
+                        alt="Gıda güvenliği mutfak" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Hijyen</span>
+                        <span class="text-xs text-slate-500">1 Mart 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-6.html" class="hover:text-primary transition-colors">Catering'de Gıda Güvenliği: Soğuk Zincir Yönetimi ve HACCP Standartları</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Profesyonel catering hizmetlerinde hijyen ve gıda güvenliğinin önemi, soğuk zincir süreçleri ve uluslararası standartlara uyum.</p>
+                    <a href="blog-6.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 7 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-7.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80"
+                        alt="Akşam yemeği organizasyonu" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Organizasyon</span>
+                        <span class="text-xs text-slate-500">10 Mart 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-7.html" class="hover:text-primary transition-colors">500 Kişilik Akşam Yemeği Nasıl Planlanır? Adım Adım Rehber</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Büyük ölçekli akşam yemeği organizasyonlarında lojistik planlama, personel yönetimi, menü belirleme ve zaman çizelgesi oluşturma.</p>
+                    <a href="blog-7.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 8 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-8.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
+                        alt="Vejetaryen sağlıklı tabak" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Sağlıklı</span>
+                        <span class="text-xs text-slate-500">18 Mart 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-8.html" class="hover:text-primary transition-colors">Vejetaryen ve Vegan Misafirler için Catering Menüsü Hazırlamak</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Beslenme kısıtlamaları olan misafirlerinize özel, lezzetli ve dengeli menü alternatifleri ile herkes için mükemmel bir organizasyon.</p>
+                    <a href="blog-8.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 9 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-9.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80"
+                        alt="Şef profesyonel tabak sunumu" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Sunum</span>
+                        <span class="text-xs text-slate-500">25 Mart 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-9.html" class="hover:text-primary transition-colors">Tabak Sunumu Sanatı: Yemeği Görsel Bir Şölen Haline Getirmek</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Profesyonel şeflerin tabak sunumunda kullandığı teknikler, renk uyumu, garnitür seçimi ve misafirlerde kalıcı izlenim bırakma sırları.</p>
+                    <a href="blog-9.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog 10 -->
+            <article class="glass-card rounded-2xl overflow-hidden card-hover">
+                <a href="blog-10.html" class="block aspect-[16/9] overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&q=80"
+                        alt="Mevsimsel yerel ürünler" />
+                </a>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">Yerel</span>
+                        <span class="text-xs text-slate-500">2 Nisan 2025</span>
+                    </div>
+                    <h2 class="text-white text-xl font-bold mb-3 leading-snug"><a href="blog-10.html" class="hover:text-primary transition-colors">Antalya'nın Yerel Lezzetlerini Catering Menünüze Dahil Etmenin Yolları</a></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">Mevsimsel ve yerel ürünler kullanarak hem taze hem de sürdürülebilir catering menüleri oluşturun; Antalya yöresinin eşsiz tatlarını keşfedin.</p>
+                    <a href="blog-10.html" class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all">Devamını Oku <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 bg-primary">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-white text-4xl font-black mb-4">Organizasyonunuzu Planlamaya Başlayın</h2>
+            <p class="text-white/80 text-lg mb-10">Sorularınız için bizi arayın veya teklif isteyin.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="teklif-al.html"
+                    class="bg-white text-primary px-8 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-white/90 transition-all">
+                    Teklif Al
+                </a>
+                <a href="tel:+905324566290"
+                    class="border-2 border-white text-white px-8 py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-white/10 transition-all">
+                    +90 532 456 6290
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="space-y-6">
+                <div>
+                    <img src="images/logo.png" alt="Adıbey Catering Logo" class="w-full h-auto object-contain" />
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Gastronomi tutkusunu profesyonel organizasyon yeteneğiyle birleştirerek 15 yıldır zirvedeyiz.
+                </p>
+            </div>
+            <div class="space-y-6">
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs">Hızlı Linkler</h4>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li><a class="hover:text-primary transition-colors" href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="referanslar.html">Referanslar</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="menuler.html">Menü Seçenekleri</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs">Hizmet Bölgeleri</h4>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li>Döşemealtı</li>
+                    <li>Muratpaşa</li>
+                    <li>Aksu</li>
+                    <li>Konyaaltı</li>
+                    <li>Kepez</li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs">İletişim</h4>
+                <ul class="space-y-4 text-slate-500 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-primary text-xl"></i>
+                        Altınkale, Şht. Mustafa Gürcan Cd. No:72/2, Döşemealtı/Antalya
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-primary text-xl"></i>
+                        +90 532 456 6290
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-primary text-xl"></i>
+                        bilgi@adiguzelcatering.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-600 text-xs">© 2024 Adıbey Catering. Tüm Hakları Saklıdır.</p>
+            <div class="flex gap-6 text-xs text-slate-600">
+                <a class="hover:text-primary" href="#">KVKK Aydınlatma Metni</a>
+                <a class="hover:text-primary" href="#">Çerez Politikası</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
