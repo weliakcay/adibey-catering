@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Menülerimiz | Adıbey Catering</title>
+    <link rel="icon" type="image/jpeg" href="images/logo.fav.jpg" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0a0c10",
+                        "navy-muted": "#161b22",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .glass-nav {
+            background: rgba(10, 12, 16, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(236, 91, 19, 0.2);
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 20px rgba(236, 91, 19, 0.15);
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-dark text-slate-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Adıbey Catering Logo" class="h-14 w-auto object-contain" />
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Ana Sayfa</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="hakkimizda.html">Hakkımızda</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                <a class="text-sm font-semibold text-primary" href="menuler.html">Menüler</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="referanslar.html">Referanslar</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="blog.html">Blog</a>
+            </div>
+            <a href="teklif-al.html"
+                class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all gold-glow flex items-center gap-2"><i
+                    class="fa-solid fa-phone text-sm"></i> Sizi Arayalım</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <img alt="Profesyonel yemek sunumu" class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&q=80" />
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-background-dark/90 via-background-dark/60 to-transparent">
+            </div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
+            <span class="text-primary font-bold uppercase tracking-[0.3em] mb-4 text-sm">Lezzet Sanatı</span>
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-6 leading-snug md:leading-tight max-w-2xl">
+                Gastronomi <br />Deneyimini Keşfedin
+            </h1>
+            <p class="text-lg text-slate-300 max-w-xl mb-8">
+                Geleneksel lezzetleri modern dokunuşlarla harmanlıyoruz. Tabldot servisinden VIP davetlere kadar her
+                detayı sizin için tasarlıyoruz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Categories Navigation -->
+    <section class="py-12 bg-[#111111] border-b border-white/5 sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button
+                    class="px-8 py-4 rounded-xl bg-primary text-white font-bold shadow-lg shadow-primary/20 flex items-center gap-2">
+                    <i class="fa-solid fa-utensils "></i> Tabldot Menüler
+                </button>
+                <button
+                    class="px-8 py-4 rounded-xl bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-champagne-glasses "></i> Kokteyl Menüleri
+                </button>
+                <button
+                    class="px-8 py-4 rounded-xl bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-star "></i> VIP Organizasyonlar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="py-20 max-w-7xl mx-auto px-6">
+        <!-- Tabldot Section -->
+        <div class="mb-24">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-extrabold mb-4 text-white">Tabldot Menülerimiz</h2>
+                    <p class="text-white/50">Günlük enerji ihtiyacınızı karşılayan, besin değerleri uzman
+                        diyetisyenlerimiz tarafından onaylanmış sağlıklı ve dengeli menüler.</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-primary/10 border border-primary/20 p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-primary text-4xl"></i>
+                        <div>
+                            <p class="text-sm font-bold uppercase">ISO 22000</p>
+                            <p class="text-white/50 text-sm">Gıda Güvenliği Standartı</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Card 1 -->
+                <div
+                    class="group bg-[#111111] rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/5 hover:border-primary/50">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Anadolu Esintisi menü görseli"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="images/menu1.jpg" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Haftalık
+                                Favori</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Anadolu Esintisi</h3>
+                            <span class="text-primary font-bold">170₺ <small
+                                    class="text-[10px] text-slate-400">/kişi</small></span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-sm text-white/60">
+                            <li class="flex items-center gap-2"> Tavuk
+                                Çorbası</li>
+                            <li class="flex items-center gap-2"> Makarna</li>
+                            <li class="flex items-center gap-2"> Tavuk
+                                Sarma</li>
+                        </ul>
+                        <a href="teklif-al.html"
+                            class="block w-full py-3 rounded-lg border border-white/10 text-white font-bold hover:bg-primary hover:border-primary transition-all text-center">Detaylı
+                            İncele</a>
+                    </div>
+                </div>
+                <!-- Menu Card 2 -->
+                <div
+                    class="group bg-[#111111] rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/5 hover:border-primary/50">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Sağlıklı diyet tabağı"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Düşük
+                                Kalori</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Fit & Form</h3>
+                            <span class="text-primary font-bold">160₺ <small
+                                    class="text-[10px] text-slate-400">/kişi</small></span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-sm text-white/60">
+                            <li class="flex items-center gap-2">
+                                Brokoli Kremalı Çorba</li>
+                            <li class="flex items-center gap-2">
+                                Izgara Tavuk Göğsü</li>
+                            <li class="flex items-center gap-2"> Kinoa
+                                Salatası</li>
+                            <li class="flex items-center gap-2">
+                                Şekersiz Elma Tatlısı</li>
+                        </ul>
+                        <a href="teklif-al.html"
+                            class="block w-full py-3 rounded-lg border border-white/10 text-white font-bold hover:bg-primary hover:border-primary transition-all text-center">Detaylı
+                            İncele</a>
+                    </div>
+                </div>
+                <!-- Menu Card 3 -->
+                <div
+                    class="group bg-[#111111] rounded-2xl overflow-hidden shadow-2xl transition-all border border-white/5 hover:border-primary/50">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Izgara et tabağı"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" />
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Usta İşi Lezzetler</h3>
+                            <span class="text-primary font-bold">155₺ <small
+                                    class="text-[10px] text-slate-400">/kişi</small></span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-sm text-white/60">
+                            <li class="flex items-center gap-2"> Yayla
+                                Çorbası</li>
+                            <li class="flex items-center gap-2"> Kadınbudu
+                                Köfte</li>
+                            <li class="flex items-center gap-2"> Patates
+                                Püresi</li>
+                            <li class="flex items-center gap-2"> Fırın
+                                Sütlaç</li>
+                        </ul>
+                        <a href="teklif-al.html"
+                            class="block w-full py-3 rounded-lg border border-white/10 text-white font-bold hover:bg-primary hover:border-primary transition-all text-center">Detaylı
+                            İncele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chef's Insight Section -->
+        <div class="relative rounded-[2rem] overflow-hidden mb-24 bg-black text-white p-8 md:p-16">
+            <div class="absolute inset-0 opacity-20">
+                <img alt="Profesyonel mutfak" class="w-full h-full object-cover"
+                    src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1920&q=80" />
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-primary p-2 flex-shrink-0">
+                    <img alt="Ekin Adıgüzel" class="w-full h-full object-cover rounded-full"
+                        src="images/ekin-adiguzel.jpg" />
+                </div>
+                <div>
+                    <i class="fa-solid fa-quote-left text-primary text-6xl mb-6"></i>
+                    <h3 class="text-3xl font-extrabold mb-6">"Lezzet, sadece taze malzemelerle değil; tutku ve
+                        disiplinle harmanlandığında gerçek kimliğini bulur."</h3>
+                    <div class="border-l-4 border-primary pl-6">
+                        <p class="font-bold text-xl uppercase tracking-wider">Ekin Adıgüzel</p>
+                        <p class="text-primary text-sm font-semibold">Executive Chef & Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIP & Cocktail Section -->
+        <div class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 text-white">Özel Davet & Kokteyl</h2>
+                <p class="text-white/50 max-w-2xl mx-auto">Unutulmaz anlarınıza eşlik edecek, görsel sunumuyla büyüleyen
+                    premium menülerimizle tanışın.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Cocktail Selection -->
+                <div class="relative group h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                    <img alt="Kokteyl ve finger food servisi"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-10 w-full">
+                        <h3 class="text-3xl font-extrabold text-white mb-2">Modern Kokteyl</h3>
+                        <p class="text-slate-300 mb-6">Finger food çeşitleri ve mini sunumlarla şık resepsiyonlar.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Karides
+                                Tempura</span>
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Somon
+                                Tartar</span>
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Roast
+                                Beef Roll</span>
+                        </div>
+                        <a href="teklif-al.html"
+                            class="inline-block bg-primary text-white px-8 py-3 rounded-xl font-bold hover:translate-x-2 transition-transform">Kataloğu
+                            Görüntüle</a>
+                    </div>
+                </div>
+                <!-- VIP Events Selection -->
+                <div class="relative group h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+                    <img alt="VIP gala yemeği düzeni"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-10 w-full">
+                        <h3 class="text-3xl font-extrabold text-white mb-2">VIP Gala Dinner</h3>
+                        <p class="text-slate-300 mb-6">Siyah kravat etkinlikleri için 5 aşamalı fine-dining menüler.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Antrikot
+                                Confite</span>
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Truffle
+                                Risotto</span>
+                            <span
+                                class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold text-white">Altın
+                                Yapraklı Sufle</span>
+                        </div>
+                        <a href="teklif-al.html"
+                            class="inline-block bg-primary text-white px-8 py-3 rounded-xl font-bold hover:translate-x-2 transition-transform">Özel
+                            Teklif Al</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Call to Action -->
+    <section class="bg-primary py-24 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-8">Sizin İçin Özel Bir Menü Tasarlayalım</h2>
+            <p class="text-white/80 text-lg mb-12 max-w-3xl mx-auto">Kurumsal ihtiyaçlarınız veya özel gününüz için en
+                uygun çözümü uzman ekibimizle birlikte planlayın.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="teklif-al.html"
+                    class="bg-white text-primary px-10 py-4 rounded-xl font-extrabold text-lg shadow-xl hover:scale-105 transition-transform">Şimdi
+                    İletişime Geçin</a>
+                <a href="hizmetlerimiz.html"
+                    class="bg-background-dark text-white px-10 py-4 rounded-xl font-extrabold text-lg shadow-xl hover:scale-105 transition-transform flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left "></i> Hizmetlerimiz
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white/40 py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="mb-6">
+                    <img src="images/logo.png" alt="Adıbey Catering Logo" class="w-full h-auto object-contain" />
+                </div>
+                <p class="text-sm leading-relaxed mb-6">1998'den beri kalite ve lezzet standartlarından ödün vermeden
+                    profesyonel catering hizmetleri sunuyoruz.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-white/90">Menülerimiz</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class="hover:text-primary transition-colors" href="#">Standart Tabldot</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Vejetaryen Seçenekler</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Executive Kokteyl</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Düğün & Nişan Menüleri</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-white/90">Kurumsal</h4>
+                <ul class="space-y-4 text-sm">
+                    <li><a class="hover:text-primary transition-colors" href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="referanslar.html">Referanslar</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="teklif-al.html">İletişim</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm text-white/90">İletişim</h4>
+                <div class="flex gap-4">
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-3"><i class="fa-solid fa-location-dot text-primary text-sm"></i> Altınkale,
+                            Şht. Mustafa Gürcan Cd. No:72/2, Döşemealtı/Antalya</li>
+                        <li class="flex gap-3"><i class="fa-solid fa-phone text-primary text-sm"></i> +90 532 456 6290
+                        </li>
+                        <li class="flex gap-3"><i class="fa-solid fa-envelope text-primary text-sm"></i>
+                            bilgi@adiguzelcatering.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center text-xs uppercase tracking-widest">
+            © 2024 Adıbey Catering. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+</body>
+
+</html>
