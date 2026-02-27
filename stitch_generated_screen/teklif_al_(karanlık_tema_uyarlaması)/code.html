@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 
-<html class="light" lang="tr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Teklif Al | Adıgüzel Catering</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Teklif Al | Adıgüzel Catering</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -34,197 +43,248 @@
             },
         }
     </script>
-<style>
+    <style>
         body {
             font-family: 'Public Sans', sans-serif;
         }
+
         .form-input-focus:focus {
             border-color: #ec5b13;
             --tw-ring-color: #ec5b13;
         }
+
         .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
         }
+
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background-color: #ec5b13;
             border-radius: 10px;
         }
     </style>
 </head>
+
 <body class="bg-background-dark text-slate-200 min-h-screen flex flex-col font-sans">
-<!-- Header / Navbar -->
-<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/90 backdrop-blur-lg">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-2xl">restaurant</span>
-</div>
-<span class="text-xl font-extrabold tracking-tight text-white uppercase">Adıgüzel Catering</span>
-</div>
-<nav class="hidden md:flex space-x-10 items-center">
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">Ana Sayfa</a>
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">Menüler</a>
-<a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="#">Hakkımızda</a>
-<a class="text-xs font-bold uppercase tracking-widest text-primary border-b-2 border-primary pb-1" href="#">İletişim</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/90 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-primary p-2 rounded-lg flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white text-2xl">restaurant</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-white uppercase">Adıgüzel Catering</span>
+                </div>
+                <nav class="hidden md:flex space-x-10 items-center">
+                    <a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors"
+                        href="#">Ana Sayfa</a>
+                    <a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors"
+                        href="#">Menüler</a>
+                    <a class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors"
+                        href="#">Hakkımızda</a>
+                    <a class="text-xs font-bold uppercase tracking-widest text-primary border-b-2 border-primary pb-1"
+                        href="#">İletişim</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20">
                         Hızlı Teklif
                     </button>
-</div>
-</div>
-</div>
-</header>
-<!-- Main Content -->
-<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-<div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-<!-- Left Side: The Form -->
-<div class="bg-card-dark rounded-3xl p-8 lg:p-12 shadow-2xl border border-white/5">
-<div class="mb-10">
-<h1 class="text-5xl font-black text-white mb-4 leading-tight font-display">Lezzet Dolu Bir <span class="text-primary">Teklif Alın</span></h1>
-<p class="text-slate-500 dark:text-slate-400 text-lg">Kurumsal ve özel etkinlikleriniz için profesyonel catering çözümleri.</p>
-</div>
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Ad Soyad</label>
-<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none" placeholder="John Doe" required="" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Şirket Adı</label>
-<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none" placeholder="Adıgüzel Ltd. Şti." type="text"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">E-posta Adresi</label>
-<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none" placeholder="ornek@sirket.com" required="" type="email"/>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Hizmet Türü</label>
-<div class="relative">
-<select class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none">
-<option disabled="" selected="" value="">Seçiniz</option>
-<option value="corporate">Kurumsal Öğle Yemeği</option>
-<option value="wedding">Düğün &amp; Nişan</option>
-<option value="party">Özel Parti</option>
-<option value="cocktail">Kokteyl Prolonge</option>
-</select>
-<span class="material-symbols-outlined absolute right-4 top-4 text-slate-400 pointer-events-none">expand_more</span>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Kişi Sayısı</label>
-<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none" min="10" placeholder="Örn: 50" type="number"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Mesajınız / Özel Talepleriniz</label>
-<textarea class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none" placeholder="Etkinlik detayı, tarih veya özel diyet gereksinimleri..." rows="4"></textarea>
-</div>
-<button class="w-full h-16 bg-primary hover:bg-primary/90 text-white font-bold text-lg rounded-2xl transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-3 group" type="submit">
-<span>Teklif Talebini Gönder</span>
-<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
-</button>
-<p class="text-xs text-center text-slate-400">Verileriniz KVKK kapsamında korunmaktadır. Göndererek kullanım şartlarımızı kabul etmiş olursunuz.</p>
-</form>
-</div>
-<!-- Right Side: Info & Map -->
-<div class="space-y-8">
-<!-- Trust Card -->
-<div class="bg-primary/10 border border-primary/20 rounded-3xl p-8">
-<h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3 font-display">
-<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Left Side: The Form -->
+            <div class="bg-card-dark rounded-3xl p-8 lg:p-12 shadow-2xl border border-white/5">
+                <div class="mb-10">
+                    <h1 class="text-5xl font-black text-white mb-4 leading-tight font-display">Lezzet Dolu Bir <span
+                            class="text-primary">Teklif Alın</span></h1>
+                    <p class="text-slate-500 dark:text-slate-400 text-lg">Kurumsal ve özel etkinlikleriniz için
+                        profesyonel catering çözümleri.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Ad
+                                Soyad</label>
+                            <input
+                                class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none"
+                                placeholder="John Doe" required="" type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Şirket
+                                Adı</label>
+                            <input
+                                class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none"
+                                placeholder="Adıgüzel Ltd. Şti." type="text" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">E-posta
+                            Adresi</label>
+                        <input
+                            class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none"
+                            placeholder="ornek@sirket.com" required="" type="email" />
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Hizmet
+                                Türü</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none">
+                                    <option disabled="" selected="" value="">Seçiniz</option>
+                                    <option value="corporate">Kurumsal Öğle Yemeği</option>
+                                    <option value="wedding">Düğün &amp; Nişan</option>
+                                    <option value="party">Özel Parti</option>
+                                    <option value="cocktail">Kokteyl Prolonge</option>
+                                </select>
+                                <span
+                                    class="material-symbols-outlined absolute right-4 top-4 text-slate-400 pointer-events-none">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Kişi
+                                Sayısı</label>
+                            <input
+                                class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none"
+                                min="10" placeholder="Örn: 50" type="number" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Mesajınız / Özel
+                            Talepleriniz</label>
+                        <textarea
+                            class="w-full bg-white/5 border-white/10 rounded-xl px-4 text-white focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all outline-none"
+                            placeholder="Etkinlik detayı, tarih veya özel diyet gereksinimleri..." rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full h-16 bg-primary hover:bg-primary/90 text-white font-bold text-lg rounded-2xl transition-all shadow-xl shadow-primary/30 flex items-center justify-center gap-3 group"
+                        type="submit">
+                        <span>Teklif Talebini Gönder</span>
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+                    </button>
+                    <p class="text-xs text-center text-slate-400">Verileriniz KVKK kapsamında korunmaktadır. Göndererek
+                        kullanım şartlarımızı kabul etmiş olursunuz.</p>
+                </form>
+            </div>
+            <!-- Right Side: Info & Map -->
+            <div class="space-y-8">
+                <!-- Trust Card -->
+                <div class="bg-primary/10 border border-primary/20 rounded-3xl p-8">
+                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3 font-display">
+                        <span class="material-symbols-outlined text-primary text-3xl">verified</span>
                         Neden Biz?
                     </h3>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">eco</span>
-<span class="text-sm font-medium">Taze ve Yerel Malzemeler</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">schedule</span>
-<span class="text-sm font-medium">Tam Zamanında Teslimat</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">workspace_premium</span>
-<span class="text-sm font-medium">20+ Yıllık Deneyim</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary">star</span>
-<span class="text-sm font-medium">A+ Hijyen Standartları</span>
-</div>
-</div>
-</div>
-<!-- Contact Details -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-card-dark border border-white/5 rounded-2xl p-6 flex items-center gap-4 group hover:border-primary/30 transition-all">
-<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">call</span>
-</div>
-<div>
-<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Bizi Arayın</p>
-<p class="text-lg font-bold text-slate-900 dark:text-white">+90 (212) 555 00 00</p>
-</div>
-</div>
-<div class="bg-card-dark border border-white/5 rounded-2xl p-6 flex items-center gap-4 group hover:border-primary/30 transition-all">
-<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined">mail</span>
-</div>
-<div>
-<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">E-posta</p>
-<p class="text-lg font-bold text-slate-900 dark:text-white">info@adiguzel.com</p>
-</div>
-</div>
-</div>
-<!-- Map Section -->
-<div class="relative h-[350px] rounded-3xl overflow-hidden group border border-slate-200 dark:border-white/10">
-<img class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 dark:brightness-50 transition-transform duration-700 group-hover:scale-105" data-alt="Stylized dark map of Istanbul showing location" data-location="Istanbul, Turkey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-e_BqmNkBEDXnrBBL__oF7sB6ijl3C9Fkph70EY85fag9u90OmkNb9sYAJRVJscD8r04FgCIod40Kki4OPpgHgL8ogfZYUWmAmtZqrJBHEq59lfkREdTQsxoJ0wRAygKu1y2aOITxMSXf0N-sNQD-0RezahGyVsVLm_tJk40eyaY49jfzRfg9AIdIbe_2-AxH2FSP-WbSNrR-izb5pgmfT08aNllsUUI9RhGXSf0kVCe8LelWRizD-g9084pVDljWTvEgjs3qdQE"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6">
-<div class="bg-card-dark/95 backdrop-blur-md p-5 rounded-2xl shadow-xl flex items-center justify-between border border-white/5">
-<div>
-<h4 class="font-bold text-white font-display">Merkez Ofis &amp; Mutfak</h4>
-<p class="text-sm text-slate-500 dark:text-slate-400">Beşiktaş, İstanbul, Türkiye</p>
-</div>
-<a class="bg-primary text-white size-10 rounded-xl flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<span class="material-symbols-outlined text-sm">directions</span>
-</a>
-</div>
-</div>
-<!-- Marker Overlay -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-<div class="size-10 bg-primary rounded-full border-4 border-white shadow-2xl flex items-center justify-center animate-bounce">
-<span class="material-symbols-outlined text-white text-sm">restaurant</span>
-</div>
-<div class="w-1 h-3 bg-white/20 blur-sm rounded-full -mt-1"></div>
-</div>
-</div>
-<!-- Social Links -->
-<div class="flex items-center justify-center gap-6">
-<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest" href="#">
-<span class="material-symbols-outlined">public</span> Instagram
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">eco</span>
+                            <span class="text-sm font-medium">Taze ve Yerel Malzemeler</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">schedule</span>
+                            <span class="text-sm font-medium">Tam Zamanında Teslimat</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                            <span class="text-sm font-medium">20+ Yıllık Deneyim</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">star</span>
+                            <span class="text-sm font-medium">A+ Hijyen Standartları</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Details -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div
+                        class="bg-card-dark border border-white/5 rounded-2xl p-6 flex items-center gap-4 group hover:border-primary/30 transition-all">
+                        <div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">call</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Bizi Arayın</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white">+90 (212) 555 00 00</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-card-dark border border-white/5 rounded-2xl p-6 flex items-center gap-4 group hover:border-primary/30 transition-all">
+                        <div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">E-posta</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white">adibeycatering@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Section -->
+                <div
+                    class="relative h-[350px] rounded-3xl overflow-hidden group border border-slate-200 dark:border-white/10">
+                    <img class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 dark:brightness-50 transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Stylized dark map of Istanbul showing location" data-location="Istanbul, Turkey"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-e_BqmNkBEDXnrBBL__oF7sB6ijl3C9Fkph70EY85fag9u90OmkNb9sYAJRVJscD8r04FgCIod40Kki4OPpgHgL8ogfZYUWmAmtZqrJBHEq59lfkREdTQsxoJ0wRAygKu1y2aOITxMSXf0N-sNQD-0RezahGyVsVLm_tJk40eyaY49jfzRfg9AIdIbe_2-AxH2FSP-WbSNrR-izb5pgmfT08aNllsUUI9RhGXSf0kVCe8LelWRizD-g9084pVDljWTvEgjs3qdQE" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent">
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div
+                            class="bg-card-dark/95 backdrop-blur-md p-5 rounded-2xl shadow-xl flex items-center justify-between border border-white/5">
+                            <div>
+                                <h4 class="font-bold text-white font-display">Merkez Ofis &amp; Mutfak</h4>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Beşiktaş, İstanbul, Türkiye</p>
+                            </div>
+                            <a class="bg-primary text-white size-10 rounded-xl flex items-center justify-center hover:scale-110 transition-transform"
+                                href="#">
+                                <span class="material-symbols-outlined text-sm">directions</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Marker Overlay -->
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                        <div
+                            class="size-10 bg-primary rounded-full border-4 border-white shadow-2xl flex items-center justify-center animate-bounce">
+                            <span class="material-symbols-outlined text-white text-sm">restaurant</span>
+                        </div>
+                        <div class="w-1 h-3 bg-white/20 blur-sm rounded-full -mt-1"></div>
+                    </div>
+                </div>
+                <!-- Social Links -->
+                <div class="flex items-center justify-center gap-6">
+                    <a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span> Instagram
                     </a>
-<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest" href="#">
-<span class="material-symbols-outlined">public</span> LinkedIn
+                    <a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span> LinkedIn
                     </a>
-<a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest" href="#">
-<span class="material-symbols-outlined">public</span> Twitter
+                    <a class="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-bold uppercase text-xs tracking-widest"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span> Twitter
                     </a>
-</div>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="mt-auto py-12 border-t border-white/5 bg-background-dark">
-<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
-<p class="text-xs font-medium text-slate-600 hover:text-primary transition-colors">© 2024 Adıgüzel Catering. Tüm Hakları Saklıdır.</p>
-<div class="flex gap-8">
-<a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
-<a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">Kullanım Koşulları</a>
-<a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">KVKK</a>
-</div>
-</div>
-</footer>
-</body></html>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="mt-auto py-12 border-t border-white/5 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-xs font-medium text-slate-600 hover:text-primary transition-colors">© 2024 Adıgüzel Catering.
+                Tüm Hakları Saklıdır.</p>
+            <div class="flex gap-8">
+                <a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">Gizlilik
+                    Politikası</a>
+                <a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">Kullanım
+                    Koşulları</a>
+                <a class="text-xs font-medium text-slate-600 hover:text-primary transition-colors" href="#">KVKK</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
